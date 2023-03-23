@@ -18,4 +18,5 @@ with open("doc1.txt") as file1, open("doc2.txt") as file2:
 
 for line in file1lst:
     if line in file2lst:
-        print(line)
+        if len(line) > 1:
+            print(line)
